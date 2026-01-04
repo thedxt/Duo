@@ -1,7 +1,9 @@
 # Duo
 Scripts related to Duo.
 
-## Duo Winlogon Upgrader
+#
+
+## Duo _Winlogon_Upgrader.ps1
 PowerShell script to upgrade Duo Winlogon
 
 The script does the following:
@@ -11,6 +13,14 @@ The script does the following:
 * does not reboot the system even if reboot is needed
 
 Things to note
-* Change `newduo` varriable for which version of Duo you want to install.
+* Change `newduo` variable for which version of Duo you want to install.
 * Run script as Administrator or System.
 * Systems may need an reboot after the upgrade.
+
+## Duo-Auth-Proxy-Checker.ps1
+PowerShell script to check the version of Duo Auth Proxy
+
+The script does the following:
+* Checks if Duo Auth Proxy is installed by using the `Prog-Finder.ps1` script from [Intall-Matrix](https://github.com/thedxt/Install-Matrix/) repo.
+* Checks if Duo Auth Proxy is less than or greater than 6.6.0 and reports the findings
+  * You can edit the script to detect newer versions by editing the `NewVersion` variable
