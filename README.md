@@ -36,3 +36,11 @@ The script does the following:
   * Installs Duo Auth Proxy silently.
   * Removes the downloaded Duo Auth Proxy file from the temp folder.
   * Sets the value of `$ProgressPreference` to the original value.
+
+## Duo-Auth-Proxy-Upgrade.ps1
+PowerShell script to check if Duo Auth Proxy is an old version and upgrades the installation.
+
+The script does the following:
+* Checks if Duo Auth Proxy is installed and if it is old with the `Duo-Auth-Proxy-Checker.ps1` script
+* If the Duo Auth Proxy version is old it upgrades Duo Auth Proxy with the `Duo-Auth-Proxy-Install.ps1` script.
+* If Duo Auth Proxy is not found nothing is installed
