@@ -1,6 +1,6 @@
 # Duo-Win-Logon-Checker.ps1
 #
-# Author: Daniel Keer
+# Contributors: @theDXT
 # Created: 2023-Apr-16
 # Last Modified: 2026-Jan-05
 # Version 2.0.0
