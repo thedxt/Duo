@@ -1,6 +1,6 @@
 # Duo-Win-Logon-Install.ps1
 #
-# Author: Daniel Keer
+# Contributors: @theDXT
 # Created: 2025-Nov-24
 # Last Modified: 2026-Jan-05
 # Version 1.0.1
