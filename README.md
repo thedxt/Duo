@@ -44,3 +44,37 @@ The script does the following:
 * Checks if Duo Auth Proxy is installed and if it is old with the `Duo-Auth-Proxy-Checker.ps1` script
 * If the Duo Auth Proxy version is old it upgrades Duo Auth Proxy with the `Duo-Auth-Proxy-Install.ps1` script.
 * If Duo Auth Proxy is not found nothing is installed
+
+## Duo-Win-Logon-Checker.ps1
+PowerShell script to check the version of Duo Win Logon
+
+The script does the following:
+* Checks if Duo Win Logon is installed by using the `Prog-Finder.ps1` script from [Intall-Matrix](https://github.com/thedxt/Install-Matrix/) repo.
+* Checks if Duo Win Logon is less than or greater than 5.2.1 and reports the findings
+  * You can edit the script to detect newer versions by editing the `NewVersion` variable
+
+## Duo-Win-Logon-Install.ps1
+PowerShell script to Install the latest version of Duo Win Logon
+
+>[!IMPORTANT]
+>You must replace `IKEY_HERE` and `SKEY_HERE` and `API_HOST_HERE` with your settings.
+
+The script does the following:
+* Installs the latest version of Duo Win Logon using various functions from [Intall-Matrix](https://github.com/thedxt/Install-Matrix/) repo.
+  * Checks if temp folder exists or not and creates it if needed.
+  * Stores the current value of `$ProgressPreference` then sets it to `SilentlyContinue` to speed up headless downloads.
+  * Downloads Duo Win Logon to the temp folder and uses an always current URL from Duo for the download.
+  * Installs Duo Win Logon silently.
+  * Removes the downloaded Duo Win Logon file from the temp folder.
+  * Sets the value of `$ProgressPreference` to the original value.
+
+## Duo-Win-Logon-Upgrade.ps1
+PowerShell script to check if Duo Win Logon is an old version and upgrades the installation.
+
+>[!IMPORTANT]
+>You must replace `IKEY_HERE` and `SKEY_HERE` and `API_HOST_HERE` with your settings.
+
+The script does the following:
+* Checks if Duo Win Logon is installed and if it is old with the `Duo-Win-Logon-Checker.ps1` script
+* If the Duo Win Logon version is old it upgrades Duo Win Logon with the `Duo-Win-Logon-Install.ps1` script.
+* If Duo Win Logon is not found nothing is installed
