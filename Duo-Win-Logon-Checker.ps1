@@ -2,7 +2,7 @@
 #
 # Author: Daniel Keer
 # Created: 2023-Apr-16
-# Last Modified: 2025-Jan-05
+# Last Modified: 2026-Jan-05
 # Version 2.0.0
 #
 # Checks which version of Duo Auth Proxy is installed
