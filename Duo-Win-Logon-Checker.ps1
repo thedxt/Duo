@@ -5,7 +5,7 @@
 # Last Modified: 2026-Jan-05
 # Version 2.0.0
 #
-# Checks which version of Duo Auth Proxy is installed
+# Checks which version of Duo Win Logon is installed
 #
 # Script URI: https://github.com/thedxt/Duo
 #
